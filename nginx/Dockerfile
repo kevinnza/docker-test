@@ -5,6 +5,7 @@ COPY ./certs/localhost/sitecert.pem /etc/ssl/certs/sitecert.pem
 COPY ./certs/localhost/sitecert.key /etc/ssl/private/sitecert.key
 
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY ssl-cert.conf /etc/nginx/ssl-cert.conf
 
 COPY init.sh /init.sh
 
