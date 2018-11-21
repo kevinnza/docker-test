@@ -5,11 +5,11 @@ services:
     container_name: nginx
     environment: 
       # Y or N
-      - SETUP_LETS_ENCRYPT_YN=N
+      - SETUP_LETS_ENCRYPT_YN=Y
       # enter an email address for registration if you enter Y above
-      - SETUP_LETS_ENCRYPT_EMAIL=
+      - SETUP_LETS_ENCRYPT_EMAIL=kevinnza@gmail.com
       # enter the domains if you enter Y above
-      - SETUP_LETS_ENCRYPT_DOMAINS=
+      - SETUP_LETS_ENCRYPT_DOMAINS=cicd.bitflint.io
     links:
       - testsite
     ports:
